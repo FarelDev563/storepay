@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+<style>
+body {
+  font-family: sans-serif;
+  background-image: url('https://pomf2.lain.la/f/fbokpeaf.jpg'); /* Ganti dengan URL gambar dari Catbox */
+  background-size: cover;
+}
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Login</h1>
+<form action="login.php" method="post">  <!-- Ganti login.php dengan script backend Anda -->
+  <label for="email">Email:</label>
+  <input type="text" id="email" name="email" required>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+
+  <button type="submit">Login</button>
+  <a href="register.html"><button type="button">Daftar</button></a>
+</form>
+
+</body>
+</html>
